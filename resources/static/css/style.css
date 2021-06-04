@@ -2,7 +2,7 @@
 /*CSS Reset*/
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body,
@@ -74,7 +74,7 @@ body header img {
 
 body header img:hover {
   -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 body header nav {
@@ -84,8 +84,8 @@ body header nav {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   place-items: center;
   height: 5rem;
 }
@@ -150,13 +150,14 @@ body main p + p {
 body main.home {
   min-height: calc(100vh - 84px);
   -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   max-width: unset;
   gap: 2rem;
 }
 
-body main.home > .img {
-  background: no-repeat center/cover url("../assets/unsplash.jpg");
+body main.home .img {
+  background: no-repeat center/cover
+    url("https://github.com/thallesgalv/arq/blob/main/resources/static/img/unsplash.jpg?raw=true");
   height: calc(100vh - 84px);
   width: 100%;
 }
@@ -170,6 +171,11 @@ body h1 {
   margin: 4rem auto;
 }
 
+body h2 {
+  font: 600 1.875rem/2.25rem "Arial";
+  margin: 4rem auto;
+}
+
 body section.flexContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -178,7 +184,7 @@ body section.flexContainer {
   place-items: center;
   gap: 2rem;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 body section.flexContainer h1 {
@@ -227,7 +233,8 @@ body table th {
   text-align: center;
 }
 
-body input[type="submit"] {
+body input[type="submit"],
+.btnCadastro {
   background-color: #d0b075;
   color: #201a1c;
   font-size: 1rem;
@@ -244,7 +251,7 @@ body input[type="submit"] {
 
 body input[type="submit"]:hover {
   -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 body form.box {
@@ -256,8 +263,8 @@ body form.box {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   border: 2px solid #d0b075;
   padding: 2rem;
   border-radius: 0.75rem;
@@ -275,6 +282,7 @@ body label textarea {
   border: 1px solid #d0b075;
   border-radius: 0.25rem;
   padding: 0.25rem;
+  color: #d0b075;
 }
 
 body label textarea {
