@@ -44,7 +44,7 @@ public class FuncionarioDAO {
 	}
 	
 	public void updateFuncionario(int cdFuncionario,Funcionario func) {
-		String sql = "UPDATE funcionario SET nmFuncionario = ?, getNmCargo = ?, getFtFuncionario = ? WHERE cdFuncionario = ?";
+		String sql = "UPDATE funcionario SET nmFuncionario = ?, nmCargo = ?, ftFuncionario = ? WHERE cdFuncionario = ?";
 		jdbc.update(sql, new Object[]{
 			func.getNmFuncionario(),func.getNmCargo(), func.getFtFuncionario(), cdFuncionario
 		});
