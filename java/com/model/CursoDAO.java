@@ -44,9 +44,9 @@ public class CursoDAO {
 	}
 	
 	public void updateCurso(int cdCurso,Curso cur) {
-		String sql = "UPDATE curso SET getCdFuncionario = ?, getNmCurso = ?, getDsCurso = ? WHERE cdCurso = ?";
+		String sql = "UPDATE curso SET cdfuncionario = ?, nmcurso = ?, dscurso = ? WHERE cdCurso = ?";
 		jdbc.update(sql, new Object[]{
-			cur.getCdFuncionario(),cur.getNmCurso(), cur.getDsCurso(), cdCurso
+			cur.getCdFuncionario(), cur.getNmCurso(), cur.getDsCurso(), cdCurso
 		});
 	}
 	 
